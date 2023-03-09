@@ -1,6 +1,6 @@
 /*
 Author       : Dreamguys
-×îÐÂ×îÈ«×îºÃµÄBootstrapÄ£°å£ºhttp://www.bootstrapmb.com
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½Ãµï¿½BootstrapÄ£ï¿½å£ºhttp://www.bootstrapmb.com
 Version      : 1.0
 */
 $(document).ready(function($) {
@@ -113,25 +113,25 @@ $(document).ready(function($) {
 	}
 	
 	// Left Sidebar Scroll
-	if($slimScrolls.length > 0) {
-		$slimScrolls.slimScroll({
-			height: 'auto',
-			width: '100%',
-			position: 'right',
-			size: '7px',
-			color: '#ccc',
-			wheelStep: 10,
-			touchScrollStep: 100
-		});
-		var wHeight = $(window).height() - 60;
-		$slimScrolls.height(wHeight);
-		$('.sidebar .slimScrollDiv').height(wHeight);
-		$(window).resize(function() {
-			var rHeight = $(window).height() - 60;
-			$slimScrolls.height(rHeight);
-			$('.sidebar .slimScrollDiv').height(rHeight);
-		});
-	}
+	// if($slimScrolls.length > 0) {
+	// 	$slimScrolls.slimScroll({
+	// 		height: 'auto',
+	// 		width: '100%',
+	// 		position: 'right',
+	// 		size: '7px',
+	// 		color: '#ccc',
+	// 		wheelStep: 10,
+	// 		touchScrollStep: 100
+	// 	});
+	// 	var wHeight = $(window).height() - 60;
+	// 	$slimScrolls.height(wHeight);
+	// 	$('.sidebar .slimScrollDiv').height(wHeight);
+	// 	$(window).resize(function() {
+	// 		var rHeight = $(window).height() - 60;
+	// 		$slimScrolls.height(rHeight);
+	// 		$('.sidebar .slimScrollDiv').height(rHeight);
+	// 	});
+	// }
 	
 	// Page wrapper height
 	var pHeight = $(window).height();
@@ -148,12 +148,12 @@ $(document).ready(function($) {
 		});
 	}
 	
-	// Datatable
-	if($('.datatable').length > 0) {
-		$('.datatable').DataTable({
-			"bFilter": false,
-		});
-	}
+	// // Datatable
+	// if($('.datatable').length > 0) {
+	// 	$('.datatable').DataTable({
+	// 		"bFilter": false,
+	// 	});
+	// }
 	
 	// Bootstrap Tooltip
 	if($('[data-toggle="tooltip"]').length > 0) {
